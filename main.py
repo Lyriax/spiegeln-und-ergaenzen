@@ -4,7 +4,7 @@
 
 import random
 
-rangeSelect = 100
+#Auswahl zwischen Spielen zwischen 100 und 1000
 rangeSelect = input("Spiegeln und ergänzen mit 100 oder 1000 spielen [100/1000]: (BISHER NUR 100 MÖGLICH!)")
 if not(rangeSelect == "100" or rangeSelect == "1000"):
   print("Falsche Zahl eingegeben")
@@ -37,3 +37,4 @@ if rangeSelect == "100":
     
     print("Richtig!")
     y = int(x)
+    

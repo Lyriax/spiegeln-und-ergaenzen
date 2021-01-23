@@ -37,4 +37,32 @@ if rangeSelect == "100":
     
     print("Richtig!")
     y = int(x)
+if rangeSelect == "1000":
+  startingnumber = random.randint(1,999)
+  playing = True
+
+
+  if len(str(startingnumber)) == 1:
+    startingnumber = "00"+str(startingnumber)
+
+  y = startingnumber
+
+  while playing == True:
+    x = input("Spiegel die Zahl " + str(y) + ": ")
+    while int(x) != int(str(y)[::-1]):
+      if int(x) != int(str(y)[::-1]):
+        print("Du bist dumm!")
+        x = input("Spiegel die Zahl " + str(y) + ": ")
     
+    print("Richtig!")
+    y = x
+    
+    x = input("Ergänze " + str(y) + " auf 1000: ")
+
+    while int(x) != 1000 - int(y):    
+      if int(x) != 1000 - int(y):
+        print("Du bist dumm!")
+        x = input("Ergänze " + str(y) + " auf 1000: ")
+    
+    print("Richtig!")
+    y = int(x)
